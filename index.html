@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cornerstone Dev LLC — Software. Products. Whatever.</title>
+  <title>Cornerstone Dev LLC</title>
   <meta name="description" content="Cornerstone Dev LLC. Software, products, consulting, and side projects. A very serious technology firm, we assure you.">
   <meta property="og:title" content="Cornerstone Dev LLC">
   <meta property="og:description" content="A premier technology firm. Incorporated and everything.">
@@ -134,11 +134,25 @@
       overflow: hidden;
     }
 
+    .hero-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      z-index: 0;
+      pointer-events: none;
+    }
+
     .hero::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at 60% 40%, rgba(255,255,255,0.03) 0%, transparent 65%);
+      background:
+        linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.45) 60%, rgba(0,0,0,0.75) 100%),
+        radial-gradient(ellipse at 60% 40%, rgba(255,255,255,0.03) 0%, transparent 65%);
+      z-index: 1;
       pointer-events: none;
     }
 
@@ -149,6 +163,8 @@
       text-transform: uppercase;
       color: var(--fg-3);
       margin-bottom: 2rem;
+      position: relative;
+      z-index: 2;
       opacity: 0;
       transform: translateY(10px);
       animation: fadeUp 0.7s cubic-bezier(0.25,0.46,0.45,0.94) forwards 0.15s;
@@ -163,7 +179,7 @@
       color: var(--fg);
       max-width: 900px;
       position: relative;
-      z-index: 1;
+      z-index: 2;
       opacity: 0;
       transform: translateY(14px);
       animation: fadeUp 1s cubic-bezier(0.25,0.46,0.45,0.94) forwards 0.3s;
@@ -186,7 +202,7 @@
       color: var(--fg-2);
       line-height: 1.65;
       position: relative;
-      z-index: 1;
+      z-index: 2;
       opacity: 0;
       transform: translateY(10px);
       animation: fadeUp 0.8s cubic-bezier(0.25,0.46,0.45,0.94) forwards 0.55s;
@@ -205,11 +221,11 @@
     .hero-stats {
       margin-top: 4rem;
       padding-top: 2.5rem;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid rgba(255,255,255,0.12);
       display: flex;
       gap: 0;
       position: relative;
-      z-index: 1;
+      z-index: 2;
       opacity: 0;
       animation: fadeUp 0.8s cubic-bezier(0.25,0.46,0.45,0.94) forwards 0.8s;
     }
@@ -699,11 +715,15 @@
 
   <!-- HERO -->
   <section class="hero">
+    <!-- Replace the src below with your dark cloudy sky / lightning video file -->
+    <video class="hero-video" autoplay loop muted playsinline>
+      <source src="hero-bg.mp4" type="video/mp4">
+    </video>
     <div class="hero-eyebrow">A Technology Firm — Registered &amp; Operational</div>
     <h1 class="hero-headline">We Build<br><em>Products.</em></h1>
     <p class="hero-sub">
-      <strong>Software. Products. Consulting.</strong> We build things people (or person) use.
-      <em>our ideas are what drive is</em>
+      <strong>Software. Products. Consulting.</strong> We build products.
+      <em>ideas are what drive us</em>
     </p>
     <div class="hero-stats">
       <div class="hero-stat">
@@ -736,7 +756,7 @@
           <span class="service-num">01</span>
         </div>
         <div class="service-desc">
-          We build. Mostly on nights and weekends. When ever we have time and have energy.
+          We build things that are useful to some.
         </div>
       </div>
 
@@ -756,7 +776,7 @@
           <span class="service-num">03</span>
         </div>
         <div class="service-desc">
-          We can do and talk. We can join Zoom meetings or stand in board rooms in front of slide decks.
+          We can do and talk. We can join Zoom meetings or in visit in person (premium).
         </div>
       </div>
 
@@ -787,7 +807,7 @@
       </div>
       <div class="about-body reveal">
         <p>
-          Cornerstone Dev LLC is a technology firm headquartered in a home office. We operate at the intersection of software, product, design, AI, people, process, AI, marketing, branding, and AI.
+          Cornerstone Dev LLC is a technology firm headquartered in a home office \. We operate at the intersection of software, product, design, AI, people, process, AI, marketing, branding, and AI.
         </p>
         <p>
           The firm was established to build what the world needs, or what the world wants, or both. 
