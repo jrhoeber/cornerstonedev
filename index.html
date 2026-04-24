@@ -8,6 +8,7 @@
   <meta property="og:title" content="Cornerstone Dev LLC">
   <meta property="og:description" content="A premier technology firm. Incorporated and everything.">
   <meta property="og:url" content="https://cornerstonedev.co">
+  <link rel="icon" type="image/svg+xml" href="cornerstone-dev-mark.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
@@ -83,7 +84,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.6rem 3rem;
+      padding: 0.75rem 3rem;
       border-bottom: 1px solid var(--border);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
@@ -94,12 +95,10 @@
     }
 
     .nav-logo {
-      font-family: var(--f-sans);
-      font-size: 13px;
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      color: var(--fg);
+      display: flex;
+      align-items: center;
       text-decoration: none;
+      color: var(--fg);
     }
 
     .nav-meta {
@@ -680,37 +679,15 @@
 </head>
 <body>
 
-  <!-- TICKER -->
-  <div class="ticker-wrap" aria-hidden="true">
-    <div class="ticker-track">
-      <span>Software Development</span><span class="ticker-sep">·</span>
-      <span>AI</span><span class="ticker-sep">·</span>
-      <span>Product Design</span><span class="ticker-sep">·</span>
-      <span>Consulting</span><span class="ticker-sep">·</span>
-      <span>Side Projects</span><span class="ticker-sep">·</span>
-      <span>AI</span><span class="ticker-sep">·</span>
-      <span>Cornerstone Dev LLC</span><span class="ticker-sep">·</span>
-      <span>Leadership</span><span class="ticker-sep">·</span>
-      <span>Nights &amp; Weekends</span><span class="ticker-sep">·</span>
-      <span>AI</span><span class="ticker-sep">·</span>
-      <span>Software Development</span><span class="ticker-sep">·</span>
-      <span>Consulting</span><span class="ticker-sep">·</span>
-      <span>AI</span><span class="ticker-sep">·</span>
-      <span>Cornerstone Dev LLC</span><span class="ticker-sep">·</span>
-      <span>Branding</span><span class="ticker-sep">·</span>
-      <span>Marketing</span><span class="ticker-sep">·</span>
-      <span>AI</span><span class="ticker-sep">·</span>
-      <span>AI</span><span class="ticker-sep">·</span>
-    </div>
-  </div>
-
   <!-- NAV -->
   <nav>
-    <a href="/" class="nav-logo">Cornerstone Dev LLC</a>
-    <div class="nav-meta">
-      <span class="nav-item"><span class="nav-dot"></span>Est. Recently</span>
-      <span class="nav-item">cornerstonedev.co</span>
-    </div>
+    <a href="/" class="nav-logo" aria-label="Cornerstone Dev LLC">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 68" height="60" aria-hidden="true">
+        <path d="M 0 0 L 60 0 L 60 20 L 20 20 L 20 60 L 0 60 Z" fill="currentColor"/>
+        <text x="80" y="28" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="32" font-weight="500" fill="currentColor" letter-spacing="0.01em">Cornerstone</text>
+        <text x="80" y="60" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="32" font-weight="500" fill="currentColor" fill-opacity="0.55" letter-spacing="0.01em">Dev LLC</text>
+      </svg>
+    </a>
   </nav>
 
   <!-- HERO -->
@@ -719,7 +696,6 @@
     <video class="hero-video" autoplay loop muted playsinline>
       <source src="hero-bg.mp4" type="video/mp4">
     </video>
-    <div class="hero-eyebrow">A Technology Firm — Registered &amp; Operational</div>
     <h1 class="hero-headline">We Build<br><em>Products.</em></h1>
     <p class="hero-sub">
       <strong>Software. Products. Consulting.</strong> We build products.
