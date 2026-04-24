@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(cp /Users/jordanhoeber/Downloads/files/cornerstone-dev-logo.svg /Users/jordanhoeber/wksp/cornerstonedev/cornerstone-dev-logo.svg)",
-      "Bash(cp /Users/jordanhoeber/Downloads/files/cornerstone-dev-mark.svg /Users/jordanhoeber/wksp/cornerstonedev/cornerstone-dev-mark.svg)"
-    ]
-  }
-}
