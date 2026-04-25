@@ -21,7 +21,7 @@
 
     :root {
       --bg:      #000000;
-      --surface: #111114;
+      --surface: #010515;
       --fg:      #f5f5f7;
       --fg-2:    #a1a1a6;
       --fg-3:    #6e6e73;
@@ -399,6 +399,47 @@
       margin-bottom: 0;
     }
 
+    .about-body p.about-lead {
+      font-size: clamp(26px, 3vw, 36px);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+      color: var(--fg);
+      margin-bottom: 2rem;
+    }
+
+    .about-pillars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .about-pillar {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .pillar-label {
+      font-family: var(--f-sans);
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--fg-3);
+    }
+
+    .pillar-text {
+      font-family: var(--f-sans);
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.6;
+      color: var(--fg-2);
+    }
+
     .about-body .footnote {
       margin-top: 2.5rem;
       padding-top: 2rem;
@@ -421,16 +462,6 @@
       position: relative;
       overflow: hidden;
       background: var(--surface);
-    }
-
-    .work-frame::before,
-    .work-frame::after {
-      content: '';
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      border-color: rgba(255,255,255,0.2);
-      border-style: solid;
     }
 
     .work-frame::before {
@@ -640,6 +671,8 @@
 
       .about-sidebar { display: none; }
 
+      .about-pillars { grid-template-columns: 1fr; gap: 1.25rem; }
+
       .contact-inner {
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -681,66 +714,21 @@
     </video>
     <h1 class="hero-headline">We Build<br><em>Products.</em></h1>
     <p class="hero-sub">
-      <strong>Software. Products.</strong> We build products.
+      <br>
+      <br>
     </p>
     <div class="hero-stats">
       <div class="hero-stat">
-        <span class="hero-stat-label">Incorporated</span>
-        <span class="hero-stat-value">Yes</span>
+        <span class="hero-stat-label">Status</span>
+        <span class="hero-stat-value">Launched.</span>
       </div>
       <div class="hero-stat">
         <span class="hero-stat-label">Employees</span>
-        <span class="hero-stat-value">One (CEO)</span>
+        <span class="hero-stat-value">One (CEO).</span>
       </div>
       <div class="hero-stat">
         <span class="hero-stat-label">Projects</span>
-        <span class="hero-stat-value">Many</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="section">
-    <div class="section-header reveal">
-      <span class="section-title">Capabilities</span>
-      <div class="section-rule"></div>
-    </div>
-
-    <div class="services-grid">
-      <div class="service-item reveal reveal-delay-1">
-        <div class="service-top">
-          <span class="service-name">Software Development</span>
-        </div>
-        <div class="service-desc">
-          We build things that are useful to some.
-        </div>
-      </div>
-
-      <div class="service-item reveal reveal-delay-2">
-        <div class="service-top">
-          <span class="service-name">Product Development</span>
-        </div>
-        <div class="service-desc">
-          We bring ideas to life and solve problems that our user(s) need us to solve. 
-        </div>
-      </div>
-
-      <div class="service-item reveal reveal-delay-4">
-        <div class="service-top">
-          <span class="service-name">Exploratory Ventures</span>
-        </div>
-        <div class="service-desc">
-          Exploring ventures. We are confident that we will eventually find one. 
-        </div>
-      </div>
-
-      <div class="service-item reveal reveal-delay-4">
-        <div class="service-top">
-          <span class="service-name">Go to Market</span>
-        </div>
-        <div class="service-desc">
-          We take product(s) to market. Only when they're ready. 
-        </div>
+        <span class="hero-stat-value">1 Pending. <br> <em>more to come.</em></span>
       </div>
     </div>
   </section>
@@ -758,17 +746,29 @@
         <div class="about-vert">About</div>
       </div>
       <div class="about-body reveal">
+        <p class="about-lead">We focus on problems first.</p>
         <p>
-          We operate at the intersection of software, product, design, AI, people, process, AI, marketing, branding, and AI.
+          Working backwards from our users' needs. We set out to fill gaps that no one has filled — delivering delightful, premium experiences to underserved audiences.
         </p>
         <p>
-          The firm was established to build what the world needs, or what the world wants, or both. 
+          Our mission is to create software that brings people together in the real world. To minimize scrolling and typing, and to maximize conversation and connection.
         </p>
-        <p class="small">
-          We are a growing company (0 employees, now 1 [CEO]) which is infinity growth (according to Google's built in calculator)
-        </p>
+        <div class="about-pillars">
+          <div class="about-pillar">
+            <span class="pillar-label">01 — Problem-first</span>
+            <span class="pillar-text">We start with the gap, not the technology.</span>
+          </div>
+          <div class="about-pillar">
+            <span class="pillar-label">02 — Real-world impact</span>
+            <span class="pillar-text">Software that moves people off screens and into life.</span>
+          </div>
+          <div class="about-pillar">
+            <span class="pillar-label">03 — Premium craft</span>
+            <span class="pillar-text">Every detail earns its place. No bloat, no compromise.</span>
+          </div>
+        </div>
         <div class="footnote">
-          Cornerstone Dev LLC is a registered limited liability company. All projects undertaken in good faith. Results may vary.
+          Cornerstone Dev LLC is a registered limited liability company. Building software that solves real problems.
         </div>
       </div>
     </div>
@@ -785,7 +785,7 @@
       <div class="work-inner">
         <div class="work-headline">Nave</div>
         <div class="work-sub">
-          A social media app for Catholics to connect with their local parish community. We build this because we are Catholics who wanted to connect more with our local parish community and thought it better to build an app than <em>talk to people in person</em>
+          A social media app for Catholics to connect with their local parish community. We build this to solve a real need in the Catholic community. When a new member joins a parish, they should feel welcome. They should be able to quickly meet people and build a strong support system that keeps them engaged in the church. 
         </div>
         <div class="work-badge">Launching in May 2026</div>
       </div>
@@ -810,7 +810,7 @@
         </div>
         <div class="contact-item">
           <span class="contact-label">Status</span>
-          <span class="contact-value">Accepting interesting problems</span>
+          <span class="contact-value">Accepting ideas & investments</span>
         </div>
         <div class="contact-item">
           <span class="contact-label">Contact</span>
