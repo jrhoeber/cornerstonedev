@@ -276,19 +276,12 @@
       margin-bottom: 4rem;
     }
 
-    .section-num {
-      font-family: var(--f-mono);
-      font-size: 9px;
-      letter-spacing: 0.15em;
-      color: var(--fg-4);
-    }
-
     .section-title {
-      font-family: var(--f-mono);
-      font-size: 9px;
+      font-family: var(--f-sans);
+      font-size: 12px;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--fg-3);
+      color: var(--fg-1);
     }
 
     .section-rule {
@@ -335,21 +328,11 @@
     }
 
     .service-name {
-      font-family: var(--f-mono);
+      font-family: var(--f-sans);
       font-size: 9px;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--fg-3);
-    }
-
-    .service-num {
-      font-family: var(--f-sans);
-      font-size: 48px;
-      font-weight: 700;
-      letter-spacing: -0.05em;
-      color: rgba(255,255,255,0.04);
-      line-height: 1;
-      transition: color 0.25s ease;
     }
 
     .service-item:hover .service-num {
@@ -420,7 +403,7 @@
       margin-top: 2.5rem;
       padding-top: 2rem;
       border-top: 1px solid var(--border);
-      font-family: var(--f-mono);
+      font-family: var(--f-sans);
       font-size: 10px;
       letter-spacing: 0.08em;
       color: var(--fg-3);
@@ -719,7 +702,6 @@
   <!-- SERVICES -->
   <section class="section">
     <div class="section-header reveal">
-      <span class="section-num">01</span>
       <span class="section-title">Capabilities</span>
       <div class="section-rule"></div>
     </div>
@@ -728,7 +710,6 @@
       <div class="service-item reveal reveal-delay-1">
         <div class="service-top">
           <span class="service-name">Software Development</span>
-          <span class="service-num">01</span>
         </div>
         <div class="service-desc">
           We build things that are useful to some.
@@ -738,7 +719,6 @@
       <div class="service-item reveal reveal-delay-2">
         <div class="service-top">
           <span class="service-name">Product Development</span>
-          <span class="service-num">02</span>
         </div>
         <div class="service-desc">
           We bring ideas to life and solve problems that our user(s) need us to solve. 
@@ -748,10 +728,18 @@
       <div class="service-item reveal reveal-delay-4">
         <div class="service-top">
           <span class="service-name">Exploratory Ventures</span>
-          <span class="service-num">03</span>
         </div>
         <div class="service-desc">
           Exploring ventures. We are confident that we will eventually find one. 
+        </div>
+      </div>
+
+      <div class="service-item reveal reveal-delay-4">
+        <div class="service-top">
+          <span class="service-name">Go to Market</span>
+        </div>
+        <div class="service-desc">
+          We take product(s) to market. Only when they're ready. 
         </div>
       </div>
     </div>
@@ -760,8 +748,7 @@
   <!-- ABOUT -->
   <section class="section">
     <div class="section-header reveal">
-      <span class="section-num">02</span>
-      <span class="section-title">The Firm</span>
+      <span class="section-title">About</span>
       <div class="section-rule"></div>
     </div>
 
@@ -790,7 +777,6 @@
   <!-- WORK -->
   <section class="section">
     <div class="section-header reveal">
-      <span class="section-num">03</span>
       <span class="section-title">Selected Work</span>
       <div class="section-rule"></div>
     </div>
@@ -809,14 +795,13 @@
   <!-- CONTACT -->
   <section class="section">
     <div class="section-header reveal">
-      <span class="section-num">04</span>
       <span class="section-title">Engage</span>
       <div class="section-rule"></div>
     </div>
 
     <div class="contact-inner">
       <div class="contact-headline reveal">
-        Have a<br><em>project</em><br>in mind?
+        Contact<br><em>us</em>.
       </div>
       <div class="contact-right reveal">
         <div class="contact-item">
