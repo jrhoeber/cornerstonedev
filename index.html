@@ -452,6 +452,12 @@
     }
 
     /* ── WORK ───────────────────────────────────────────────── */
+    .work-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
     .work-frame {
       border: 1px solid var(--border);
       border-radius: 2px;
@@ -462,6 +468,16 @@
       position: relative;
       overflow: hidden;
       background: var(--surface);
+    }
+
+    .work-headline a {
+      color: inherit;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .work-headline a:hover {
+      opacity: 0.65;
     }
 
     .work-frame::before {
@@ -664,6 +680,8 @@
         border-bottom: none !important;
       }
 
+      .work-grid { grid-template-columns: 1fr; }
+
       .about-inner {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -728,7 +746,37 @@
       </div>
       <div class="hero-stat">
         <span class="hero-stat-label">Projects</span>
-        <span class="hero-stat-value">1 Pending. <br> <em>more to come.</em></span>
+        <span class="hero-stat-value">More all<br> <em>the time.</em></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section">
+    <div class="section-header reveal">
+      <span class="section-title">Selected Work</span>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="work-grid">
+      <div class="work-frame reveal">
+        <div class="work-inner">
+          <div class="work-headline">Nave</div>
+          <div class="work-sub">
+            A social media app for Catholics to connect with their local parish community. We build this to solve a real need in the Catholic community. When a new member joins a parish, they should feel welcome. They should be able to quickly meet people and build a strong support system that keeps them engaged in the church.
+          </div>
+          <div class="work-badge">Launching in May 2026</div>
+        </div>
+      </div>
+
+      <div class="work-frame reveal">
+        <div class="work-inner">
+          <div class="work-headline"><a href="https://protypic.ai" target="_blank" rel="noopener">Protypic</a></div>
+          <div class="work-sub">
+            A simple tool to upload and share static prototypes securely.
+          </div>
+          <div class="work-badge">protypic.ai</div>
+        </div>
       </div>
     </div>
   </section>
@@ -770,24 +818,6 @@
         <div class="footnote">
           Cornerstone Dev LLC is a registered limited liability company. Building software that solves real problems.
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WORK -->
-  <section class="section">
-    <div class="section-header reveal">
-      <span class="section-title">Selected Work</span>
-      <div class="section-rule"></div>
-    </div>
-
-    <div class="work-frame reveal">
-      <div class="work-inner">
-        <div class="work-headline">Nave</div>
-        <div class="work-sub">
-          A social media app for Catholics to connect with their local parish community. We build this to solve a real need in the Catholic community. When a new member joins a parish, they should feel welcome. They should be able to quickly meet people and build a strong support system that keeps them engaged in the church. 
-        </div>
-        <div class="work-badge">Launching in May 2026</div>
       </div>
     </div>
   </section>
